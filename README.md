@@ -29,6 +29,7 @@ Searches
   - result_type
   - score
 - facets
+- typing_time
 - response_time (for performance)
 - typed_query (for autocomplete)
 - exclude (boolean - `true` if admin or bot)
@@ -79,9 +80,15 @@ http://www.elasticsearch.org/guide/en/elasticsearch/guide/current/scoring-theory
 
 ### Conversions
 
-Let your users order your results
+Let your users order your results.
 
-Works well when results are relatively static
+If a user searches for “ice cream” and adds Ben & Jerry’s Chunky Monkey to the cart (our conversion metric at Instacart), that result gets a little more weight for similar searches.
+
+This works well when results are relatively static
+
+Pros:
+
+- works well without domain specific knowledge
 
 Cons:
 
@@ -90,7 +97,7 @@ Cons:
 
 ### Machine Learning
 
-[todo]
+[todo: which features influence the result, test algorithm against previous data]
 
 ## Analyze
 
