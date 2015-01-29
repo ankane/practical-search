@@ -21,24 +21,26 @@ Track searches and conversions
 Searches
 
 - query (case-sensitive)
-- time
 - user_id or visitor_id
-- typed_query (for autocomplete)
-- referrer
-- user_agent
+- searched_at
 - platform (`Web`, `iOS`, `Android`, etc)
-- exclude (admin or bot)
 - results
   - result_id
+  - result_type
   - score
-- took (for performance)
+- response_time (for performance)
 - facets
+- typed_query (for autocomplete)
+- exclude (admin or bot)
+- referrer
+- user_agent
+- ip
 - other properties (like city, department, etc)
 
 Events (to define conversions)
 
-- name (viewed, added to cart, etc)
 - search_id
+- name (viewed, added to cart, etc)
 - result_id
 - position (in results)
 - time
@@ -252,9 +254,9 @@ For the fastest response times, cache suggestions in an in-memory data store lik
 
 The number of suggestions varies from site-to-site.
 
-Google: 4
-Bing: 8
-Amazon: 10+
+- Google: 4
+- Bing: 8
+- Amazon: 10+
 
 We prefer to keep it short like Google.
 
