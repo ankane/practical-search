@@ -24,7 +24,8 @@ Searches
 - time
 - user_id or visitor_id
 - typed_query (for autocomplete)
-- page (searched from)
+- referrer
+- user_agent
 - platform (`Web`, `iOS`, `Android`, etc)
 - exclude (admin or bot)
 - results
