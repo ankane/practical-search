@@ -32,7 +32,7 @@ Searches
 - response_time (for performance)
 - typed_query (for autocomplete)
 - exclude (boolean - `true` if admin or bot)
-- referrer
+- referrer - which page was searched from
 - user_agent
 - ip
 - other properties (like city, department, etc)
