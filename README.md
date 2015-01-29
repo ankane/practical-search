@@ -10,7 +10,7 @@ This is a work in progress, built for the open-source community.  If you have gr
 
 - [Instrument](#instrument)
 - [Analyze](#analyze)
-- [Scoring Theory (Ranking)](#scoring-theory)
+- [Scoring Theory (Ranking)](#scoring-theory-ranking)
 - [Semantic Search](#semantic-search)
 - [Autocomplete](#autocomplete)
 
