@@ -28,10 +28,10 @@ Searches
   - result_id
   - result_type
   - score
-- response_time (for performance)
 - facets
+- response_time (for performance)
 - typed_query (for autocomplete)
-- exclude (admin or bot)
+- exclude (boolean - `true` if admin or bot)
 - referrer
 - user_agent
 - ip
@@ -40,7 +40,7 @@ Searches
 Events (to define conversions)
 
 - search_id
-- name (viewed, added to cart, etc)
+- name (`Viewed`, `Added to cart`, etc)
 - result_id
 - position (in results)
 - time
