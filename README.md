@@ -48,6 +48,13 @@ Events (to define conversions)
 
 ## Analyze
 
+### Top Queries
+
+Quick: top n ordered by lowest conversion rate asc
+Better: use Wilson score for lowest max conversion rate, as it balances volume and conversion rate
+
+Get all combinations of searches and conversions and bulk update queries
+
 ### Conversions
 
 First, choose how to define conversions. [todo: explain more]
@@ -60,7 +67,20 @@ Look at:
 
 ### Sessions
 
-- average searches
+todo: how to define a session (and possibly pseudo code)
+
+- average number of searches per session
+
+### No Results and Low Conversions
+
+- what do people search for next
+- manually review to try to find trends
+
+### Autocomplete
+
+Do autocompleted queries perform better?
+
+Use linear classifier with features
 
 ### Performance
 
