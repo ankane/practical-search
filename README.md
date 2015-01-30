@@ -50,8 +50,8 @@ Events (to define conversions)
 
 ### Top Queries
 
-Quick: top n ordered by lowest conversion rate asc
-Better: use Wilson score for lowest max conversion rate, as it balances volume and conversion rate
+- Quick: top n queries ordered by conversion rate asc
+- Better: use Wilson score for lowest max conversion rate, as it balances volume and conversion rate
 
 Get all combinations of searches and conversions and bulk update queries
 
@@ -73,14 +73,13 @@ todo: how to define a session (and possibly pseudo code)
 
 ### No Results and Low Conversions
 
-- what do people search for next
-- manually review to try to find trends
+- What do people search for next?
+- Manually review to try to find trends
 
 ### Autocomplete
 
-Do autocompleted queries perform better?
-
-Use linear classifier with features
+- Do autocompleted queries perform better?
+- Use linear classifier with features
 
 ### Performance
 
