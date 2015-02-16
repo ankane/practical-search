@@ -21,12 +21,12 @@ Track searches and conversions
 Searches
 
 - query (case-sensitive)
+- normalized_query (downcase, squish whitespace)
 - user_id or visitor_id
 - searched_at
 - platform (`Web`, `iOS`, `Android`, etc)
 - results
   - result_id
-  - result_type
   - score
 - facets
 - typing_time
@@ -48,10 +48,16 @@ Events (to define conversions)
 
 ## Analyze
 
-### Top Queries
+Where to start?
+
+### Queries
 
 - Quick: top n queries ordered by conversion rate asc
 - Better: use Wilson score for lowest max conversion rate, as it balances volume and conversion rate
+
+```
+Wilson score of (searches - conversions, searches)
+```
 
 Get all combinations of searches and conversions and bulk update queries
 
@@ -86,6 +92,9 @@ todo: how to define a session (and possibly pseudo code)
 Search must be fast.
 
 http://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales
+
+- average response time over time
+- 90th percentile response time over time
 
 [todo: how to improve performance. caching, etc]
 
