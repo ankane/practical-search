@@ -58,12 +58,20 @@ Where to start?
 
 ### Queries
 
+First, choose how to define conversions. [todo: explain more]
+
 - Quick: top n queries ordered by conversion rate asc
 - Better: use Wilson score for lowest max conversion rate, as it balances volume and conversion rate
 
 ```
 Wilson score, k = searches - conversions, n = searches
 ```
+
+Look at:
+
+- conversion rate
+- time to result
+- average position
 
 Tag why queries are bad:
 
@@ -72,21 +80,11 @@ Tag why queries are bad:
 - poor ranking
 - other reasons, like missing pictures (if applicable)
 
-Get all combinations of searches and conversions and bulk update queries
-
-### Conversions
-
-First, choose how to define conversions. [todo: explain more]
-
-Look at:
-
-- conversion rate
-- time to result
-- average position
-
 ### Sessions
 
 todo: how to define a session (and possibly pseudo code)
+
+New session after conversion or amount of time passes
 
 - average number of searches per session
 
@@ -116,6 +114,18 @@ http://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-s
 
 [todo: how to improve performance. caching, etc]
 
+### Categorize Queries
+
+[todo]
+
+### Related Searches
+
+[todo]
+
+### Strings of Searches
+
+[todo]
+
 ## Scoring Theory (Ranking)
 
 ### Practical Sorting
@@ -144,21 +154,6 @@ Cons:
 ### Machine Learning
 
 [todo: which features influence the result, test algorithm against previous data]
-
-## Analyze
-
-- sessions
-- queries
-- strings of searches
-- related searches
-
-### Sessions
-
-New session after conversion or amount of time passes
-
-### Categorize Queries
-
-[todo]
 
 ## Semantic Search
 
@@ -369,7 +364,7 @@ $searchInput.on('keyup', function (e) {
     typingStartedAt = new Date();
   }
 });
-$searchForm.on('submit', function () {
+$searchInput.closest('form').on('submit', function () {
   if (typingStartedAt) {
     $('#typing_time', ((new Date()) - typingStartedAt) / 1000.0);
     typingStartedAt = null;
