@@ -65,6 +65,13 @@ Where to start?
 Wilson score of (searches - conversions, searches)
 ```
 
+Tag why queries are bad:
+
+- item not carried
+- item carried but missing from results
+- poor ranking
+- other reasons, like missing pictures (if applicable)
+
 Get all combinations of searches and conversions and bulk update queries
 
 ### Conversions
