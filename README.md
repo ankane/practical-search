@@ -8,12 +8,17 @@ This is a work in progress, built for the open-source community.  If you have gr
 
 ## Outline
 
+- [How Search Works](#how-search-works)
 - [Instrument](#instrument)
 - [Analyze](#analyze)
 - [Scoring Theory (Ranking)](#scoring-theory-ranking)
 - [Semantic Search](#semantic-search)
 - [Autocomplete](#autocomplete)
 - [Technology](#technology)
+
+## How Search Works
+
+[todo: explain tokenization]
 
 ## Instrument
 
