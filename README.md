@@ -62,7 +62,7 @@ Where to start?
 - Better: use Wilson score for lowest max conversion rate, as it balances volume and conversion rate
 
 ```
-Wilson score of (searches - conversions, searches)
+Wilson score, k = searches - conversions, n = searches
 ```
 
 Tag why queries are bad:
@@ -102,7 +102,7 @@ todo: how to define a session (and possibly pseudo code)
 - Which queries to autocomplete?
 
 ```
-Wilson score of (searches - autocompleted, searches)
+Wilson score, k = searches - autocompleted, n = searches
 ```
 
 ### Performance
