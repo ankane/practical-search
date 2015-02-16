@@ -13,6 +13,7 @@ This is a work in progress, built for the open-source community.  If you have gr
 - [Scoring Theory (Ranking)](#scoring-theory-ranking)
 - [Semantic Search](#semantic-search)
 - [Autocomplete](#autocomplete)
+- [Technology](#technology)
 
 ## Instrument
 
@@ -373,6 +374,12 @@ $searchInput.on('keyup', function () {
   $('#typed_query').val(typedQuery); // autocompleted!!
 });
 ```
+
+## Technology
+
+- [Elasticsearch](http://www.elasticsearch.org/)
+- [Solr](http://lucene.apache.org/solr/)
+- [Sphinx](http://sphinxsearch.com/)
 
 ## Contribute
 
