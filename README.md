@@ -86,6 +86,11 @@ todo: how to define a session (and possibly pseudo code)
 
 - Do autocompleted queries perform better?
 - Use linear classifier with features
+- Which queries to autocomplete?
+
+```
+Wilson score of (searches - autocompleted, searches)
+```
 
 ### Performance
 
