@@ -20,6 +20,10 @@ This is a work in progress, built for the open-source community.  If you have gr
 
 [todo: explain tokenization]
 
+## How to Measure
+
+[Precision vs recall](https://en.wikipedia.org/wiki/Precision_and_recall)
+
 ## Instrument
 
 Track searches and conversions
