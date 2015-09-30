@@ -22,7 +22,9 @@ This is a work in progress, built for the open-source community.  If you have gr
 
 ## How to Measure
 
-[Precision vs recall](https://en.wikipedia.org/wiki/Precision_and_recall)
+- [Precision vs Recall](https://en.wikipedia.org/wiki/Precision_and_recall)
+- [Mean Reciprocal Rank](https://en.wikipedia.org/wiki/Mean_reciprocal_rank)
+- [Normalized Discounted Cumulative Gain](https://www.kaggle.com/wiki/NormalizedDiscountedCumulativeGain)
 
 ## Instrument
 
