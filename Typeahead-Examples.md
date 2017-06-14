@@ -19,7 +19,17 @@ $.getJSON('/suggestions', function (suggestions) {
 $searchInput.typeahead({highlight: true}, {source: engine.ttAdapter()})
 ```
 
-Time to type
+Measure typed query (only populated when autocompleted)
+
+```js
+$searchInput.on('keyup', function () {
+  typedQuery = $searchInput.typeahead('val')
+}).on('typeahead:selected typeahead:autocompleted', function () {
+  $('#typed_query').val(typedQuery) // autocompleted!!
+})
+```
+
+Measure typing time
 
 ```js
 $searchInput.on('keyup', function (e) {
@@ -32,15 +42,5 @@ $searchInput.closest('form').on('submit', function () {
     $('#typing_time', ((new Date()) - typingStartedAt) / 1000.0)
     typingStartedAt = null
   }
-})
-```
-
-Typed query for autocompleted queries
-
-```js
-$searchInput.on('keyup', function () {
-  typedQuery = $searchInput.typeahead('val')
-}).on('typeahead:selected typeahead:autocompleted', function () {
-  $('#typed_query').val(typedQuery) // autocompleted!!
 })
 ```
