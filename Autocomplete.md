@@ -115,3 +115,5 @@ From this, you can analyze the percent of searches that use autocomplete. You ca
 ## Conclusion
 
 This should give you a nice foundation for getting started with autocomplete. Check out [Autosuggest](https://github.com/ankane/autosuggest) for a Ruby implementation.
+
+If you use Typehead.js, we also have [examples](Typeahead-Examples.md) for how to prefetch and measure.
