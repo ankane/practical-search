@@ -6,9 +6,7 @@ Best search practices for developers and code to implement them. Let’s make se
 
 1. [Measuring](Measuring.md)
 1. [Matching](Matching.md)
-    1. Query Reformulation
 1. [Ranking](Ranking.md)
-    1. Learning to Rank
 1. [Autocomplete](Autocomplete.md)
 
 ## Related Projects
