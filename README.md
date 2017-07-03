@@ -2,11 +2,20 @@
 
 Best search practices for developers and code to implement them. Let’s make search a better experience for our users.
 
-- [Level Up Your Search](Level-Up-Your-Search.md)
-- [Autocomplete](Autocomplete.md)
-- Query Reformulation
-- Semantic Search
-- Learning to Rank
+## Chapters
+
+1. [Measuring](Measuring.md)
+1. [Matching](Matching.md)
+    1. Query Reformulation
+1. [Ranking](Ranking.md)
+    1. Learning to Rank
+1. [Autocomplete](Autocomplete.md)
+
+## Related Projects
+
+- [Searchkick](https://github.com/ankane/searchkick) - Intelligent search made easy for Rails
+- [Searchjoy](https://github.com/ankane/searchjoy) - Search analytics made easy
+- [Autosuggest](https://github.com/ankane/autosuggest) - Autocomplete suggestions based on what your users search
 
 ## Contribute
 
